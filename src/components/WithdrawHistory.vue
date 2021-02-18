@@ -20,7 +20,7 @@ export default {
     histiryList() {
       return [...this.history].reverse().map((el) => ({
         ...el,
-        created: moment(el.created).format('HH:MM:ss'),
+        created: moment(el.created).format('HH:mm:ss'),
       }));
     },
   },
